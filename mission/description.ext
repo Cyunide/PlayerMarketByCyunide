@@ -1,0 +1,11 @@
+/*
+* Add the following to the description.ext of your mission 
+* PlayerMarket by Cyunide
+*/
+
+class CfgFunctions
+{
+	#include "MarketByCyunide\CfgFunctions.cpp"
+};
+
+
