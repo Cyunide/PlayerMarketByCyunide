@@ -1,4 +1,4 @@
-# PlayerMarketByCyunide
+# PlayerMarketByCyunide 1.0
 ### An addon for Arma 3 Exile
 
 ## About
