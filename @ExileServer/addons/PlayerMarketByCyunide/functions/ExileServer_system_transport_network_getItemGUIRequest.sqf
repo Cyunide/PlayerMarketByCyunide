@@ -30,7 +30,6 @@ try {
 		_playerMoney = _playerObject getVariable ['ExileMoney', 0];
 		_sellerCurrentLocker = format["getLocker:%1", _sellerUID] call ExileServer_system_database_query_selectSingle;
 		_sellerCurrentLocker = _sellerCurrentLocker select 0;
-		diag_log format["FUCKERA!!! %1 - %2", _sellerUID, str _sellerCurrentLocker];
 		if (_playerMoney >= _itemPrice) then {
 			if (_playerObject canAdd _itemClassName) then {	
 				// Good can afford and add to inventory
