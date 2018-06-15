@@ -1,4 +1,4 @@
-# PlayerMarketByCyunide 1.0
+# PlayerMarketByCyunide 1.1
 ### An addon for Arma 3 Exile
 
 ## About
@@ -12,6 +12,10 @@ Special thanks to Andrew and the Exile community for an awesome Arma game mode!
 ## Donation
 
 If you would like to make a donation, do so at http://paypal.me/cyunide
+
+## Upgrading
+
+See ChangeLog.md and UpdateInstructions.md for instructions.
 
 ## Install Instructions
 
