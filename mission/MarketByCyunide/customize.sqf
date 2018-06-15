@@ -20,4 +20,4 @@ CyPM_MAX_SELL_AMOUNT = -1;
 // You can set this to the minimum amount an item can be sold for.
 // Set to -1 to disable limit
 // Default: -1
-CyPM_MIN_SELL_AMOUNT = -1;
+CyPM_MIN_SELL_AMOUNT = 17;

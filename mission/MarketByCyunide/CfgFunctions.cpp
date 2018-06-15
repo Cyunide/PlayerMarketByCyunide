@@ -8,6 +8,7 @@ class CyFs {
 		file = "MarketByCyunide\Functions";
 		class RequestBuy {};
 		class doSearch {};
+		class cypostInit { postInit = 1; };
 	};
 };
 
