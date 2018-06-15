@@ -5,6 +5,10 @@
 
 PlayerMarket is an addon for Exile that adds an app to the XM8 tablet that allows players to buy and sell their items. I found that allowing players to have an economy that's driven by other players instead of only having NPC/Traders adds depth, dynamic, and fun to the game! Don't be the server without it!
 
+## What's New
+
+You can now customize the mod! You can set the max global listing limit, max listings per player, min and max sell values!
+
 ## Credits
 
 Special thanks to Andrew and the Exile community for an awesome Arma game mode!
