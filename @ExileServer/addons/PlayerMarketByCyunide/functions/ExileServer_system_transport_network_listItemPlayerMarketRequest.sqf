@@ -44,13 +44,11 @@ if (_cyRet >= CyPM_Max_Listing_Player) then{
 
 if (_goodToAdd isEqualTo 0) then {
 	// Insert the item in the database
-	_cyRet = format["insertPlayerMarketSellRow:%1:%2:%3:%4", (_itemClassName), (_itemDisplayName), (_sellPrice), (_myUID)] call ExileServer_system_database_query_fireAndForget;
-	
-waitUntil{
-	sleep 2;
-	1 isEqualTo 1;
-};
-
+	_cyRet = format["insertPlayerMarketSellRow:%1:%2:%3:%4", (_itemClassName), (_itemDisplayName), (_sellPrice), (_myUID)] call ExileServer_system_database_query_insertSingle;
+	while {isNull _cyRet} do {
+		diag_log "Still Null :(";
+	};
+	diag_log format["Cyret is %1", _cyRet];
 	// Then update the variable
 	_page = 0;
 	_pageSize = 50;
