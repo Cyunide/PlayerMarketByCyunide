@@ -13,6 +13,48 @@ class XM8_App05_Button: RscExileXM8AppButton1x1
     resource = "XM8SlideCyunide";
 };
 
+////// Add this to your config.cpp file at end (Or in existing CfgNetworkMessages if you have it!
+////// This class may already be defined in your config.cpp, do a search!
+ class CfgNetworkMessages
+{
+    class getItemGUIRequest
+    {
+        module="system_transport";
+        parameters[]=
+        {
+            "STRING"
+        };
+    };
+   
+    class getItemGUIResponse
+    {
+        module="system_transport";
+        parameters[]=
+        {
+            "SCALAR",
+            "STRING"
+        };
+    };
+	
+	class listItemPlayerMarketRequest
+    {
+        module="system_transport";
+        parameters[]=
+        {
+            "STRING",
+			"STRING",
+			"SCALAR",
+			"STRING",
+			"SCALAR"
+        };
+    };
+	
+	class listPlayerMarketResponse {
+		module="system_transport";
+		parameters[]= { "SCALAR" };
+	};	
+}
+
 ////// This needs added to the very end of config.cpp of mission file
 
 class XM8SlideCyunideSell: RscExileXM8Slide
