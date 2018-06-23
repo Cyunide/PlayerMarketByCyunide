@@ -1,7 +1,13 @@
 ////// This needs added to class CfgXM8 in config.cpp mission file
+class cyMachine	{
+	controlID = 85150;
+	appID = "App05";
+	title = "Player Market By Cyunide";
+};
+
 class cyMachineSell {
-		controlID = 85160;
-		title = "Player Market By Cyunide Sell";
+	controlID = 85160;
+	title = "Player Market By Cyunide Sell";
 };
 
 ////// Set the button text like this
