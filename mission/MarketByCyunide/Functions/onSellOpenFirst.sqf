@@ -7,19 +7,31 @@ _slideControl = _display ctrlCreate ["XM8SlideCyunideSell", 85160, _slidesContro
 
 lbClear 85162;
 
-{
-	_configName = (_x) call ExileClient_util_gear_getConfigNameByClassName;
-	_itemDisplayName = getText(configFile >> _configName >> _x >> "displayName");
+if !(primaryWeapon player isEqualTo "") then {
+	_configName = (primaryWeapon player) call ExileClient_util_gear_getConfigNameByClassName;
+	_itemDisplayName = getText(configFile >> _configName >> (primaryWeapon player) >> "displayName");
 	if !(_itemDisplayName isEqualTo "") then {
 		_index = lbAdd [85162, (_itemDisplayName)];		
-		lbSetPicture[85162, _index, getText(configFile >> _configName >> _x >> "picture")];
+		lbSetPicture[85162, _index, getText(configFile >> _configName >> (primaryWeapon player) >> "picture")];
 		lbSetPictureColor [85162, _index, [1,1,1,1]];
-		_buffData = (_x);
+		_buffData = (primaryWeapon player);
 		lbSetData [85162, _index, _buffData];
 		lbSetValue [85162, _index, 0];
 	};
-} forEach weapons player;
+};
 
+if !(secondaryWeapon player isEqualTo "") then {
+	_configName = (secondaryWeapon player) call ExileClient_util_gear_getConfigNameByClassName;
+	_itemDisplayName = getText(configFile >> _configName >> (secondaryWeapon player) >> "displayName");
+	if !(_itemDisplayName isEqualTo "") then {
+		_index = lbAdd [85162, (_itemDisplayName)];		
+		lbSetPicture[85162, _index, getText(configFile >> _configName >> (secondaryWeapon player) >> "picture")];
+		lbSetPictureColor [85162, _index, [1,1,1,1]];
+		_buffData = (secondaryWeapon player);
+		lbSetData [85162, _index, _buffData];
+		lbSetValue [85162, _index, 0];
+	};
+};
 
 {
 	_configName = (_x) call ExileClient_util_gear_getConfigNameByClassName;
