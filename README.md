@@ -39,7 +39,7 @@ This is just the unpacked version of the pbo, you do NOT need to do anything wit
 On your server go to the "mpmissions" folder. Whichever map you want to add it to, our example will be Exile.Altis, you need to unpack (unpbo) it.
 
 Go into the Exile.Altis folder (Or whichever map if you used a different one.)
-Copy the "PlayerMarketByCyunide" from the downloaded file located in \mission\PlayerMarketByCyunide.
+Copy the "MarketByCyunide" from the downloaded file located in \mission\MarketByCyunide.
 
 Copy that folder over and BE SURE TO REPACK YOUR Exile.Altis PBO!
 
